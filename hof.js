@@ -10,9 +10,15 @@ var people = [
 // person in the `people` array. Assign the returned array to a variable
 // called `peoplesAges`.
 
-
+var peoplesAges = people.map(function(person){
+  return person.age;
+})
 
 
 // Use the `filter` array method to create a new, filtered array containing only
 // persons from the `people` array who are older than 35. Assign the returned array
 // to a variable called `peopleOlderThan35`.
+
+var peopleOlderThan35 = people.filter(function(person){
+  return person.age>35;
+})
